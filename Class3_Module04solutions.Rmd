@@ -1,0 +1,57 @@
+---
+title: "Module 03 in Class Notes"
+author: "Christopher A Schmitt"
+date: "September 16, 2019"
+output: html_document
+---
+
+Here we're going to load our packages that we need for the Homework:
+```{r}
+library(stringr)
+```
+
+Now, just in case you can't remember the useful calls from this package, before beginning, try this:
+```{r}
+?stringr
+```
+
+CHALLENGE 1
+
+```{r}
+#Lara had one solution here:
+
+#Here I'm creating a vector of the statement (I've already erased all of the punctuation)
+ulysses<-c("Stately plump Buck Mulligan came from the stairhead bearing a bowl of lather on which a mirror and a razor lay crossed")
+Split<-str_split(ulysses, " ")[[1]]
+#split into single words
+Matrix<-matrix(Split, nrow = 7, ncol = 3, byrow = TRUE)
+#My code is now in a matrix
+Matrix
+Matrix[1:7,3]
+```
+
+```{r}
+#Feiya has another solution, here:
+ulysses<-c("Stately plump Buck Mulligan came from the stairhead bearing a bowl of lather on which a mirror and a razor lay crossed")
+Split<-str_split(ulysses, " ")
+#split into single words
+Split1=unlist(Split)
+#vector
+Split1[seq(from=1, to=21,by=3)]
+```
+
+```{r}
+#C had a different solution here:
+
+#Here I'm creating a vector of the statement (I've already erased all of the punctuation)
+ulysses<-c("Stately plump Buck Mulligan came from the stairhead bearing a bowl of lather on which a mirror and a razor lay crossed")
+ulysses[1:21*3]
+```
+
+
+```{r}
+#4 dimensional array!  By CLint!
+array <- array(400:1, dim = c(5, 5, 4, 4))
+array
+```
+
