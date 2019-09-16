@@ -3,7 +3,6 @@ title: "Original Homework Code"
 author: "Christopher A Schmitt"
 date: "September 16, 2019"
 output: html_document
-  toc: true
 ---
 
 ***
@@ -38,8 +37,3 @@ x
 ```
  
 #CHALLENGES
-
-<ol>
-<li>problem 1</li>
-<li>problem 2</li>
-</ol>
